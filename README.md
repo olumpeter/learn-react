@@ -544,7 +544,7 @@ function App() {
 export default App;
 ```
 
-### 1.7. Filtering arrays of items 
+#### 1.6.2. Filtering arrays of items 
 
 ```jsx
 // PeopleDataList.jsx
@@ -647,7 +647,7 @@ function App() {
 export default App;
 ```
 
-#### 7.1 Keeping list items in order with key 
+#### 1.6.3 Keeping list items in order with key 
 
 Notice that all the sandboxes above show an error in the console:
 
@@ -663,29 +663,29 @@ You need to give each array item a `key` — a string or a number that uniquely 
 
 >*Note*: JSX elements directly inside a map() call always need keys!
 
-##### 1.7.1 Where to get your `key`
+##### 1.6.3.1 Where to get your `key`
 
 Different sources of data provide different sources of keys:
 
 - **Data from a database**: If your data is coming from a database, you can use the database keys/IDs, which are unique by nature.
 - **Locally generated data**: If your data is generated and persisted locally (e.g. notes in a note-taking app), use an incrementing counter, `crypto.randomUUID()` or a package like `uuid` when creating items.
 
-##### 1.7.2 Rules of keys 
+##### 1.6.3.2 Rules of keys 
 
 - `Keys must be unique among siblings`. However, it’s okay to use the same keys for JSX nodes in different arrays.
 - `Keys must not change` or that defeats their purpose! Don’t generate them while rendering.
 
-##### 1.7.3 Why does React need keys? 
+##### 1.6.3.3 Why does React need keys? 
 
 Imagine that files on your desktop didn’t have names. Instead, you’d refer to them by their order — the first file, the second file, and so on. You could get used to it, but once you delete a file, it would get confusing. The second file would become the first file, the third file would be the second file, and so on.
 
 File names in a folder and JSX keys in an array serve a similar purpose. They let us uniquely identify an item between its siblings. A well-chosen key provides more information than the position within the array. Even if the position changes due to reordering, the key lets React identify the item throughout its lifetime.
 
-### 1.8. Keeping Components Pure
+### 1.7. Keeping Components Pure
 
 Some JavaScript functions are `pure`. Pure functions only perform a calculation and nothing more. By strictly only writing your components as pure functions, you can avoid an entire class of baffling bugs and unpredictable behavior as your codebase grows. To get these benefits, though, there are a few rules you must follow.
 
-#### 1.8.1 Purity: Components as formulas 
+#### 1.7.1 Purity: Components as formulas 
 
 In computer science (and especially the world of functional programming), a pure function is a function with the following characteristics:
 
@@ -780,17 +780,17 @@ Just like a math formula.
 
 You could think of your components as recipes: if you follow them and don’t introduce new ingredients during the cooking process, you will get the same dish every time. That “dish” is the JSX that the component serves to React to render.
 
-#### 1.8.2 Side Effects: (un)intended consequences
+#### 1.7.2 Side Effects: (un)intended consequences
 
 React’s rendering process must always be pure. Components should only return their JSX, and not change any objects or variables that existed before rendering—that would make them impure!
 
-#### 1.8.3 Local mutation: Your component’s little secret 
+#### 1.7.3 Local mutation: Your component’s little secret 
 
 The problem of component changing a *preexisting* variable while rendering is often called a **"mutation"** to make it sound a bit scarier. Pure functions don’t mutate variables outside of the function’s scope or objects that were created before the call—that makes them impure!
 
 However, **it’s completely fine to change variables and objects that you’ve just created while rendering**.In this example, you create an `[]` array, assign it to a cups variable, and then push a dozen cups into it:
 
-#### 1.8.4 Where you can cause side effects
+#### 1.7.4 Where you can cause side effects
 
 While functional programming relies heavily on purity, at some point, somewhere, *something* has to change. That’s kind of the point of programming! These changes—updating the screen, starting an animation, changing the data—are called **side effects**. They’re things that happen "on the side", not during rendering.
 
@@ -800,13 +800,13 @@ If you’ve exhausted all other options and can’t find the right event handler
 
 When possible, try to express your logic with rendering alone. You’ll be surprised how far this can take you!
 
-## 1.9. Understanding Your UI as a Tree
+## 1.8. Understanding Your UI as a Tree
 
 Your React app is taking shape with many components being nested within each other. How does React keep track of your app’s component structure?
 
 React, and many other UI libraries, model UI as a tree. Thinking of your app as a tree is useful for understanding the relationship between components. This understanding will help you debug future concepts like performance and state management.
 
-### 1.9.1. Your UI as a tree 
+### 1.8.1. Your UI as a tree 
 
 
 
