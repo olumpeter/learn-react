@@ -1,0 +1,27 @@
+
+/* General styles */
+
+.sub-topic-container {
+    max-width: 800px;
+    min-height: 200px;
+    border: 5px solid black;
+    padding: 20px;
+}
+
+h1:first-of-type, h2:first-of-type, h3:first-child {
+    /* Get rid of the ugly space before h1, h2, h3,... */
+    margin-top: 0px;
+}
+
+/* Your first component */
+
+#amazing_scientists {
+    text-align: center;
+}
+
+/* JavaScript in JSX with curly braces */
+
+#javaScript-in-jsx-with-curly-braces .photo {
+    border-radius: 45px;
+}
+

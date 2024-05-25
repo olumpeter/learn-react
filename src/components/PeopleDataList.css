@@ -1,0 +1,19 @@
+
+/* Filtering arrays of items  */
+
+.scientists-profile {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.scientists-profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.data-list {
+    padding-left: 0px;
+}

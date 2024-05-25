@@ -1,0 +1,15 @@
+
+* {
+    box-sizing: border-box;
+    
+}
+
+#root {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#root > div {
+    margin-bottom: 50px;
+}
+

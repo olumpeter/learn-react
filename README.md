@@ -2,6 +2,21 @@
 
 This repository has projects that will help you learn React concepts that you will use on a daily basis.
 
+## 0. How you can access this live website
+
+<dl>
+  Use the following URL:
+  <dd>
+   https://olumpeter.github.io/learn-react/
+  </dd>
+  or click the following link:
+  <dd>
+    <a href="https://olumpeter.github.io/learn-react/">Visit website</a>
+  </dd>
+</dl>
+
+
+
 ## 1. Describing the UI
 
 React is a JavaScript library for rendering user interfaces (UI). UI is built from small units like buttons, text, and images. React lets you combine them into reusable, nestable components. From web sites to phone apps, everything on the screen can be broken down into components. In this chapter, you’ll learn to create, customize, and conditionally display React components.
