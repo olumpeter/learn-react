@@ -4,16 +4,15 @@ This repository has projects that will help you learn React concepts that you wi
 
 ## 0. How you can access this live website
 
-<dl>
-  Use the following URL:
-  <dd>
-   https://olumpeter.github.io/learn-react/
-  </dd>
-  or click the following link:
-  <dd>
-    <a href="https://olumpeter.github.io/learn-react/">Visit website</a>
-  </dd>
-</dl>
+### 0.1. Use the following URL
+
+```url
+https://olumpeter.github.io/learn-react/
+```
+
+### 0.2. click the following link
+
+[Visit website](https://olumpeter.github.io/learn-react/)
 
 
 
@@ -800,19 +799,19 @@ If you’ve exhausted all other options and can’t find the right event handler
 
 When possible, try to express your logic with rendering alone. You’ll be surprised how far this can take you!
 
-## 1.8. Understanding Your UI as a Tree
+### 1.8. Understanding Your UI as a Tree
 
 Your React app is taking shape with many components being nested within each other. How does React keep track of your app’s component structure?
 
 React, and many other UI libraries, model UI as a tree. Thinking of your app as a tree is useful for understanding the relationship between components. This understanding will help you debug future concepts like performance and state management.
 
-### 1.8.1. Your UI as a tree 
+#### 1.8.1. Your UI as a tree 
 
 Trees are a relationship model between items and UI is often represented using tree structures. For example, browsers use tree structures to model HTML ([DOM](https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction)) and CSS ([CSSOM](https://developer.mozilla.org/docs/Web/API/CSS_Object_Model)). Mobile platforms also use trees to represent their view hierarchy.
 
 Like browsers and mobile platforms, React also uses tree structures to manage and model the relationship between components in a React app. These trees are useful tools to understand how data flows through a React app and how to optimize rendering and app size.
 
-## The Render Tree 
+#### 1.8.2 The Render Tree 
 
 A major feature of components is the ability to compose components of other components. As we nest components, we have the concept of parent and child components, where each parent component may itself be a child of another component.
 
@@ -960,3 +959,4 @@ The root node in a React render tree is the root component of the app. In this c
 A render tree represents a single render pass of a React application. With conditional rendering, a parent component may render different children depending on the data passed.
 
 We can update the app to conditionally render either an inspirational quote or color.
+
