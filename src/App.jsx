@@ -19,6 +19,10 @@ import { ChemistsDataList } from "./components/PeopleDataList";
 import { PhysicistsDataList } from "./components/PeopleDataList";
 import { AstrophysicistsDataList } from "./components/PeopleDataList";
 import SpicedChaiRecipe from "./components/SpicedChaiRecipe";
+import FancyText from "./components/FancyText";
+import InspirationGenerator from "./components/InspirationGenerator"
+import Copyright from "./components/Copyright";
+
 
 function App() {
   return (
@@ -120,6 +124,17 @@ function App() {
         <h3>1.7.1 Purity: Components as formulas</h3>
         <div id="purity-components-as-formulas">
           <SpicedChaiRecipe/>
+        </div>
+      </div>
+
+      <h3>1.8. Understanding Your UI as a Tree</h3>
+      <div id="understanding-your-ui-as-a-tree" className="sub-topic-container" >
+        <h3>1.8.1 The Render Tree </h3>
+        <div id="the-render-tree ">
+          <FancyText title text={"Get Inspired App"} />
+          <InspirationGenerator>
+            <Copyright year={2024} />
+          </InspirationGenerator>
         </div>
       </div>
     </>
