@@ -6,10 +6,14 @@
     min-height: 200px;
     border: 5px solid black;
     padding: 20px;
+    margin-bottom: 50px;
+    font-size: 20px;
 }
 
-h1:first-of-type, h2:first-of-type, h3:first-child {
-    /* Get rid of the ugly space before h1, h2, h3,... */
+.sub-topic-container > h1:first-child, 
+.sub-topic-container > h2:first-child, 
+.sub-topic-container > h3:first-child, 
+.sub-topic-container > h4:first-child {
     margin-top: 0px;
 }
 
@@ -23,5 +27,14 @@ h1:first-of-type, h2:first-of-type, h3:first-child {
 
 #javaScript-in-jsx-with-curly-braces .photo {
     border-radius: 45px;
+}
+
+.sub-topic-container textarea {
+    min-width: 400px;
+    min-height: 150px;
+}
+
+button {
+    font-size: 2rem;
 }
 

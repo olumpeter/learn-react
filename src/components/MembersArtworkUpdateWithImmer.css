@@ -1,0 +1,23 @@
+
+#members-artwork-form > div {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+#members-artwork-form .edit-button {
+    font-size: 20px;
+    padding: 0;
+    margin-left: 5px;
+    border: 0px;
+}
+
+#members-artwork-form input {
+    width: auto;
+}
+
+#artwork-image img {
+    width: 200px;
+    height: 200px;
+}

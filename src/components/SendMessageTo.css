@@ -1,0 +1,9 @@
+
+#name-select select {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+#send-message-form > div {
+    margin-bottom: 10px;
+}

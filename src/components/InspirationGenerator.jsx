@@ -1,10 +1,10 @@
 
 import React from "react";
-import quotes from "./quotes";
-import FancyText from "./FancyText";
+import { quotes } from "./quotes";
+import { FancyText } from "./FancyText";
 
 
-export default function InspirationGenerator({children}) {
+export function InspirationGenerator({children}) {
     const [index, setIndex] = React.useState(0);
     const quote = quotes[index];
 

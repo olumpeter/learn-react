@@ -1,0 +1,10 @@
+
+#increment-count-by-one > h1 {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#increment-count-by-one {
+    display: flex;
+    align-items: center;
+}

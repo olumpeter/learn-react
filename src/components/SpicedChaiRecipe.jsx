@@ -1,5 +1,5 @@
 
-export default function SpicedChaiRecipe() {
+export function SpicedChaiRecipe() {
     return (
         <section>
             <h1>Spiced Chai Recipe</h1>
